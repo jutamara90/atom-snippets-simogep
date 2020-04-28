@@ -1,0 +1,104 @@
+#
+#Snippets Personales para los proyectos.
+#
+'text.html.php':
+#funcion Privada
+  'funcion privada':
+    'prefix': 'p_function_pri'
+    'description': 'Funcion Privada'
+    'body'  : """
+      private function ${1:FunctionName}($${2:name})
+      {
+        ${3://Coloca tu codigo aqui}
+      }
+      """
+#################
+  'funcion protegida':
+    'prefix': 'p_funcion_prot'
+    'description': 'Funcion Protected'
+    'body'  : """
+      protected function ${1:FunctionName}($${2:name})
+      {
+        ${3://Coloca tu codigo aqui}
+      }
+      """
+#################
+  'retorno' :
+    'prefix': 'p_retorno'
+    'description': 'metodo retorno'
+    'body'  : 'return ${1://tu codigo aqui};'
+#################
+  'funcion publica static':
+     'prefix': 'p_statica_func'
+     'description': 'Funcion publica static'
+     'body'  : """
+        public static function ${1:FunctionName}($${2:name})
+        {
+        ${  3://Coloca tu codigo aqui}
+        }
+        """
+#################
+  'funcion abstract publica':
+    'prefix': 'p_abstracta_func_pub'
+    'description': 'funcion abstracta publica'
+    'body'  : 'abstract public function ${1:functionname}(${2:$name});'
+#################
+  'clase abstract':
+     'prefix': 'p_abstracta_clase'
+     'description': 'Clase Abstracta'
+     'body':"""
+        /**
+         *
+        */
+       abstract class ${1:nameclass}
+       {
+         ${2://tu codigo desde aqui}
+       }
+       """
+#################
+  'clase abstract exte':
+     'prefix': 'p_abstracta_clasee'
+     'description': 'Clase Abstracta extendida'
+     'body':"""
+        /**
+         *
+        */
+       abstract class ${1:nameclass} extends ${2:nameclase}
+       {
+         ${3://tu codigo desde aqui}
+       }
+       """
+#################
+  'clase':
+     'prefix': 'p_clase'
+     'description': 'Clase'
+     'body' : """
+        /**
+         *
+        */
+       class ${1:nameclass}
+       {
+         ${2://tu codigo desde aqui}
+       }
+       """
+#################
+  'comillas':
+    'prefix': 'p_com'
+    'body'  : '\"$1"'
+#################
+  'parentesis':
+    'prefix': 'p_par'
+    'body'  : '\($1)'
+#################
+  'corchetes':
+    'prefix': 'p_cor'
+    'body'  : '\[$1]'
+#################
+  'llaves':
+    'prefix': 'p_lla'
+    'body'  : '\{$1}'
+#################
+  'llamado Raintpl':
+    'prefix': 'p_call'
+    'description': 'Llamado de la clase Raintpl para php-html'
+    'body'  : '$tsp->$1'
